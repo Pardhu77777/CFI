@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { asset } from "../data/site.js";
 
 const DURATION = 7000;
 
 // Headings + button labels from the current site. `text` is a short summary; paste full copy here if needed.
 const SLIDES = [
   {
-    image: "/hero/hero-1.jpg",
+    image: asset("hero/hero-1.jpg"),
     alt: "Suggested Autumn Resources leaflet, September 2026",
     eyebrow: "Shop",
     badge: "NEW",
@@ -15,7 +16,7 @@ const SLIDES = [
     cta: { label: "More detail", to: "/shop?filter=latest" },
   },
   {
-    image: "/hero/hero-2.jpg",
+    image: asset("hero/hero-2.jpg"),
     alt: "Cover of Enhance magazine, 3rd quarter 2026",
     eyebrow: "Magazine",
     title: "ENHANCE 3rd Quarter 2026",
@@ -23,7 +24,7 @@ const SLIDES = [
     cta: { label: "Read online", to: "/magazine" },
   },
   {
-    image: "/hero/hero-3.jpg",
+    image: asset("hero/hero-3.jpg"),
     alt: "Biblical Lands of Israel calendar cover",
     eyebrow: "New calendar",
     badge: "2026–27",
@@ -32,7 +33,7 @@ const SLIDES = [
     cta: { label: "More detail", to: "/shop?filter=latest" },
   },
   {
-    image: "/hero/hero-4.jpg",
+    image: asset("hero/hero-4.jpg"),
     alt: "Volunteers at Project Open Gates, providing practical aid for new immigrants",
     eyebrow: "Projects",
     title: "Humanitarian Aid in Israel",
@@ -41,7 +42,7 @@ const SLIDES = [
     cta2: { label: "Donate", to: "/donate" },
   },
   {
-    image: "/hero/hero-5.jpg",
+    image: asset("hero/hero-5.jpg"),
     alt: "Educating for Extremism article spread",
     eyebrow: "Current affairs",
     title: "Educating for Extremism",

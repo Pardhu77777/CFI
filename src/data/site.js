@@ -1,4 +1,7 @@
 // Site name, contact details and navigation.
+
+// Prefix a file in public/ with the site's base path ("/" in dev, "/CFI/" on GitHub Pages).
+export const asset = (path) => import.meta.env.BASE_URL + path.replace(/^\//, "");
 export const SITE_NAME = "Christian Friends of Israel";
 export const SITE_TAGLINE = "United Kingdom";
 

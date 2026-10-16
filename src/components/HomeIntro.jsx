@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import VideoFeature from "./VideoFeature.jsx";
 import Reveal from "./Reveal.jsx";
-import { SITE_NAME, SITE_TAGLINE } from "../data/site.js";
+import { SITE_NAME, SITE_TAGLINE, asset } from "../data/site.js";
 
 const VIDEOS = [
   {
@@ -59,7 +59,7 @@ export default function HomeIntro() {
           <Reveal delay={0}>
           <article className="fcard" onMouseMove={spot}>
             <div className="fcard__banner fcard__banner--brand">
-              <img src="/cfi-logo.png" alt="" />
+              <img src={asset("cfi-logo.png")} alt="" />
               <span>
                 <strong>{SITE_NAME}</strong>
                 <small>{SITE_TAGLINE}</small>

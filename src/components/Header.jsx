@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { NAV, SITE_NAME, SITE_TAGLINE } from "../data/site.js";
+import { NAV, SITE_NAME, SITE_TAGLINE, asset } from "../data/site.js";
 import { SocialLinks } from "./Icon.jsx";
 
 const isMobile = () => window.matchMedia("(max-width: 1000px)").matches;
@@ -23,7 +23,7 @@ function SearchBox({ id, onSearch }) {
 export function Logo() {
   return (
     <Link className="logo" to="/" aria-label={`${SITE_NAME} ${SITE_TAGLINE}, home`}>
-      <img src="/cfi-logo.png" alt="" width="166" height="175" />
+      <img src={asset("cfi-logo.png")} alt="" width="166" height="175" />
       <span className="logo__text">
         <span className="logo__name">{SITE_NAME}</span>
         <span className="logo__tag">{SITE_TAGLINE}</span>
@@ -95,7 +95,7 @@ export default function Header() {
       <nav className={`mainnav ${open ? "open" : ""} ${stuck ? "stuck" : ""}`} id="primary-nav" aria-label="Main">
         <div className="container">
           <Link className="nav-mini" to="/" aria-label="Home" tabIndex={stuck ? 0 : -1}>
-            <img src="/cfi-logo.png" alt="" />
+            <img src={asset("cfi-logo.png")} alt="" />
           </Link>
           <SearchBox id="site-search-mobile" onSearch={handleSearch} />
           <ul className="nav__list">

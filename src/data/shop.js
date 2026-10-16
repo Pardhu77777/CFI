@@ -1,15 +1,17 @@
+import { asset } from "./site.js";
+
 // Homepage "Recommended Resources".
 export const RECOMMENDED = [
-  { image: "/books/book-1.jpg", title: "Bible: A Story That Makes Sense of Life (The)", author: "Andrew Ollerton", price: "£12.00" },
-  { image: "/books/book-2.png", title: "Builder’s Stone (The)", price: "£21.00" },
-  { image: "/books/book-3.jpg", title: "From Passover to Easter", author: "Derek White", price: "£4.00" },
+  { image: asset("books/book-1.jpg"), title: "Bible: A Story That Makes Sense of Life (The)", author: "Andrew Ollerton", price: "£12.00" },
+  { image: asset("books/book-2.png"), title: "Builder’s Stone (The)", price: "£21.00" },
+  { image: asset("books/book-3.jpg"), title: "From Passover to Easter", author: "Derek White", price: "£4.00" },
 ];
 
 // Shop "Latest Products" (newest first).
 export const PRODUCTS = [
-  { image: "/books/Galatians_Reconsidered.jpg", title: "Galatians Reconsidered", author: "Neil Martin", price: "£21.00" },
-  { image: "/books/Unlocking_the_Old_Testament.jpg", title: "Unlocking the Old Testament", author: "Yohanna Katanacho", price: "£17.00" },
-  { image: "/books/CalendarWebPromo.jpg", title: "Biblical Lands of Israel (2026-2027)", author: "Galilee Calendars", price: "£10.00" },
+  { image: asset("books/Galatians_Reconsidered.jpg"), title: "Galatians Reconsidered", author: "Neil Martin", price: "£21.00" },
+  { image: asset("books/Unlocking_the_Old_Testament.jpg"), title: "Unlocking the Old Testament", author: "Yohanna Katanacho", price: "£17.00" },
+  { image: asset("books/CalendarWebPromo.jpg"), title: "Biblical Lands of Israel (2026-2027)", author: "Galilee Calendars", price: "£10.00" },
   ...RECOMMENDED,
 ];
 

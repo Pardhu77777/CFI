@@ -1,5 +1,6 @@
 import AboutLayout from "../components/AboutLayout.jsx";
 import Reveal from "../components/Reveal.jsx";
+import { asset } from "../data/site.js";
 
 const PDF = "https://www.cfi.org.uk/uploads/texteditor/Questions_Questions_booklet_v10.pdf";
 
@@ -16,7 +17,7 @@ export default function IsraelQuestions() {
         <div className="iq-stage">
           <a className="iq-book" href={PDF} target="_blank" rel="noopener noreferrer">
             <span className="iq-book__cover">
-              <img src="/books/questions-questions.png" alt="Questions Questions booklet cover" width="300" height="427" />
+              <img src={asset("books/questions-questions.png")} alt="Questions Questions booklet cover" width="300" height="427" />
             </span>
             <span className="iq-book__badge" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
