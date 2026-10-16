@@ -48,8 +48,9 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
+    const site = `${SITE_NAME} | CFI UK`;
     const page = pageTitles[location.pathname] || "News";
-    document.title = `${page} | ${SITE_NAME}`;
+    document.title = location.pathname === "/" ? site : `${page} | ${site}`;
   }, [location.pathname]);
 
   useEffect(() => {
