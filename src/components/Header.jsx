@@ -135,6 +135,14 @@ export default function Header() {
               )
             )}
           </ul>
+          <div className="nav__account">
+            <Link className="nav__account-login" to="/login">
+              Login
+            </Link>
+            <Link className="btn-donate" to="/donate">
+              Donate
+            </Link>
+          </div>
           <SocialLinks />
         </div>
       </nav>

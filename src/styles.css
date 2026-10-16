@@ -1198,6 +1198,16 @@ html, body { overflow-x: clip; }
   .auth__panel { padding: 28px 22px 32px; }
 }
 
+
+/* Mobile menu: account buttons (Login is hidden from the header on phones) */
+.nav__account { display: none; }
+@media (max-width: 1000px) {
+  .nav__account { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; padding-top: 16px; border-top: 1px solid #e3e9f3; }
+  .nav__account a { justify-content: center; padding: 11px 16px; font-size: 1rem; }
+  .nav__account-login { display: inline-flex; align-items: center; border-radius: 999px; font-weight: 700; text-decoration: none; color: #2f66ad; border: 2px solid #2f66ad; transition: background .2s, color .2s; }
+  .nav__account-login:hover { background: #2f66ad; color: #fff; }
+}
+
 @tailwind utilities;
 
 /* Mini logo in sticky nav */
